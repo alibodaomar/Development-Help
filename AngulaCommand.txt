@@ -1,0 +1,62 @@
+
+to install Angular
+npm install -g @angular/cli    //run this command on cmd or git bash
+Must install first node Js 
+
+===========================npm command in angular==================
+npm i jquery                              //to add jquery to your project
+npm i webpack webpack-cli --save-dev      //Add webpack  this commade add all package inside node_module folder
+npm run bulid                             //usd to run and bulid your project
+npm install                               //to install node_modeule
+npm install ng2-validation --save     //to setup ng2-validation
+npm install rxjs --save               //to install rxjs(Reactive extensional java script)  no need to insall aleardy insall with angular cli
+npm install rxjs-compat              //must update version on package.json ("rxjs-compat": "6.3.0")   must make also  //npm update
+npm i bootstrap@5 --save         or   npm i bootstrap --save               //install bootstrap    inside Style.cs file set //@import '~bootstrap/dist/css/bootstrap.css';
+npm install --save  @ng-bootstrap/ng-bootstrap         //add ng bootstrap library   also "import { NgbModal } from '@ng-bootstrap/ng-bootstrap';     //Import this line inside App.module"
+
+===============================ng command in angular===================
+ng version                                // to check angular version
+ng new Employe-portal                     //Create new Project
+ng update                                 //Update Angular to Lastest Version
+ng serve     or ng s                      //To start Project
+ng serve --open                           //When he finish bulid open directly
+App.module                                 //any component you will add must be added on App.module
+ng build                                   //to bulid  your project
+ng g c remittance-transaction               //generate new component remittance-transaction
+ng g module enums                             //generate modeule with name enums
+ng generate service hero     or     ng g s hero                 //generate service with name hero
+ng g p summery                        //to generate custome Pipe with name summeryPipe
+ng g s Services/post                 //To generate Service "post" inside Folder Services
+ng lint                             //to check your code  spcaes ,doubel qotation
+ng lint --fix                       //if you want to fix error 
+------
+npm install --force  --save  @ng-bootstrap/ng-bootstrap     //add ng bootstrap library
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';     //Import this line inside App.module
+--
+=========================================================================================
+How to Publish you code on git hup
+github   UserName:alimohammedelsayedelsayed@gmail.com      Password:P@ssw0rdalibodomar
+ **command to publish on git hub
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/alibodaomar/itsharedploytogithup.git
+git push -u origin main
+======================================
+
+
+npm install -g angular-cli-ghpages  //install Packages of gitpages
+ng build --base-href "https://alibodaomar.github.io/angularProject/"  //ng build --base-href "https://username:github.io/RepositryName"   this  for Deployment
+ngh               //Which Reference angular git hub Pages
+
+Build Path:ng build --base-href "https://alibodaomar.github.io/angularProject/"     //How to Build on Specific Path (git hubPathP
+
+to set use command every time set in Package.json inside Script
+EX:"deploy:gh":"ng build --base-href 'https://alibodaomar:github.io/itsharedploytogithup/'"
+how to run 
+npm run deploy:gh
+=====Genseral Command
+
+git add .   //To add all file on git hub
+git commit -m 'all file added' //To commit changes

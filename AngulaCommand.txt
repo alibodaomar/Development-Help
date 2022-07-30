@@ -60,3 +60,12 @@ npm run deploy:gh
 
 git add .   //To add all file on git hub
 git commit -m 'all file added' //To commit changes
+
+==========Deployee angular Project on FireBase=========
+1-Must install package 
+npm install -g firebase-tools   or    npm install --location firebase-tools    //--location=global    
+2-login to firebase
+firebase login                   //if you have version issue  with node.js please install lower version of firebase  like "npm install -g firebase-tools@10.9.2"
+3-firebase init        //here must change folder from Public to dist
+4-ng build
+5-firebase deploy       //to deployee when finish will give you URL  that you can see your app on it

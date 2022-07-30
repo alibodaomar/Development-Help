@@ -1,0 +1,80 @@
+--==We Take Branch From Staging Because If There is thing on Staging will deplyee on Master
+Create new Branch 
+git checkout -b hotfix/transactionlocationslist origin/staging  //Create new Branch Of Staging
+======================
+if there is certificate issue use  "git config --global http.sslVerify false"
+if there is merge request and there is change not belong to you you must do this 
+
+git fetch origin //get origin
+git checkout "WU_ChangAccountForIndiaSMS_andS_MV" //get your branche
+git fetch origin
+git pull origin "WU_ChangAccountForIndiaSMS_andS_MV" //get you changes
+git checkout "test" //get test branch
+git pull origin test //get test banches changes
+git merge --no-ff "WU_ChangAccountForIndiaSMS_andS_MV" //merge
+
+=====How To Clone Project From git Lab
+for framwork -->>  https://GitLabUserName:TokenID@gitlab.arfqdn.com/stc-pay/backend/framework.git         //GitLabUserName(your UserName) ,TokenID (your Token ID)
+for Integration -->>https://GitLabUserName:TokenID@gitlab.arfqdn.com/stc-pay/backend/integration.git      //GitLabUserName(your UserName) ,TokenID (your Token ID)
+
+
+git checkout "Feature/Notification_Campaign"
+git fetch origin
+git pull origin "Feature/Notification_Campaign"
+git checkout "test"
+git pull origin test
+git merge --no-ff "Feature/Notification_Campaign"
+
+====================================This Command is very important in gitlab 
+$ git checkout test_d0                       //Switched to branch 'test_d0'
+$ git pull origin test_d0                    //git all changes from test_d0  
+$ git checkout -b feature/bills_dz test_d0   //Create branch bills_dz from bills_d0 and switched to bills_dz
+$ git reset --soft HEAD~1                    //Reset Last commit
+$ git checkout .                               //Undo for chanes
+$ git clean -f -d                             //Delete Untracked file
+$git restore .                                //Undo uncommited changes
+$git branch -D productionMaster               //delete your local Baranch "productionMaster"  notic p is small 
+git push origin feature/transfer_dz           //to make  Push through gitlab
+git reset --hard                              //go to last thing (remove uncommited changes) if this error happened (feature/genericfield_dz|MERGING)
+$ git fetch                                    //git all Branches from git lab to local
+git branch -m hotfix/AMLUnspicifiedEntityType   //Rename of Branch to hotfix/AMLUnspicifiedEntityType(Change name)
+git push origin hotfix/AMLUnspicifiedEntityType // push this Branch as "hotfix/AMLUnspicifiedEntityType"
+git status                                //Check Status Of Branch
+git branch -D  BranchName                     //  delete BranchName locally
+git push origin --delete remoteBranchName    // delete branch remoteBranchName  remotely   (Must Delete Branch Remotlly First Than Locally)
+git merge --abort  "Stoped Branch"          //used to Cancel Merge 
+git reset commithere(Numer of Commit you want to stop in)      //Wil remove all commits after this commit
+git branch -D dev        delete dev locally when you stoped on other branch(must be stoped on other branch)
+git checkout -b dev origin/dev          to create branch  dev locally from  origin/dev
+git switch -c main                     // this  create branch with the same name of main and the Same configuration if you stop on the same branch
+git checkout -b dev origin/dev          //create new branch dev from origin/dev  regardless you stop on any other branch
+git rebase staging      must run this -->git rebase --continue             //put change of staging first Then Put Your Change 
+
+====How to solve this error(error: cannot lock ref 'refs/remotes/origin/dev': is at 3612d9d2636c2544f203ee454d147fb3ae583898 but expected 2cec5980d7c683f672993c38b84b396195702ad4)
+Use 1: $ git gc --prune=now
+    2: $ git remote prune origin
+============================
+git stash save "prtcustomer changes"      //Must be stoping on your branch if you need stach you will app unsatge
+
+git checkout -b hotfix/transactionlocationslist origin/staging  //Create new Branch Of Staging
+==============================
+How To make rebase(we need rebase if you take branch than other people take branche and they finshed before you and merged thier changes then your branch not contain thier changes, so you need to make rebase to take thier chages first  and after that your change will be set)
+1-git checkout staging   
+2-git pull origin staging  
+3-git checkout yourbranch 
+4-git pull origin yourbranch 
+5-git rebase staging (get all change from staging first then take change of your change)  
+6-git rebase --continue
+================================
+to collect your Commit in one Commit Please run those commands
+1- git reset 14568b86                                        //14568b86  commite id before any commit you do
+  **Allchanges will revert back to visual stadio you can add delete update any thing and commit only from Visual staduio
+2-git push -f origin feature/datacleasing_HoldOnbording      //Force Push to Your Branch
+=======================================================
+   
+
+
+
+
+
+

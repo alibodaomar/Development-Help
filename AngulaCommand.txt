@@ -60,6 +60,7 @@ npm run deploy:gh
 
 git add .   //To add all file on git hub
 git commit -m 'all file added' //To commit changes
+git push origin main
 
 ==========Deployee angular Project on FireBase=========
 1-Must install package 

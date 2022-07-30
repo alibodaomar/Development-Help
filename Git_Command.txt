@@ -71,6 +71,10 @@ to collect your Commit in one Commit Please run those commands
   **Allchanges will revert back to visual stadio you can add delete update any thing and commit only from Visual staduio
 2-git push -f origin feature/datacleasing_HoldOnbording      //Force Push to Your Branch
 =======================================================
+If You Make Change on file steps to commit and Push
+1-git add .
+2-git commit -m "Addcommenthere"
+3-git push -u origin BranchName
    
 
 

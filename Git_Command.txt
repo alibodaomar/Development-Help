@@ -1,5 +1,5 @@
 --==We Take Branch From Staging Because If There is thing on Staging will deplyee on Master
-Create new Branch 
+Create new Branch  
 git checkout -b hotfix/transactionlocationslist origin/staging  //Create new Branch Of Staging
 ======================
 if there is certificate issue use  "git config --global http.sslVerify false"
@@ -34,7 +34,7 @@ $ git checkout .                               //Undo for chanes
 $ git clean -f -d                             //Delete Untracked file
 $git restore .                                //Undo uncommited changes
 $git branch -D productionMaster               //delete your local Baranch "productionMaster"  notic p is small 
-git push origin feature/transfer_dz           //to make  Push through gitlab
+git push origin feature/transfer_dz           //to make  Push through gitlab or   git push -u origin branchName  
 git reset --hard                              //go to last thing (remove uncommited changes) if this error happened (feature/genericfield_dz|MERGING)
 $ git fetch                                    //git all Branches from git lab to local
 git branch -m hotfix/AMLUnspicifiedEntityType   //Rename of Branch to hotfix/AMLUnspicifiedEntityType(Change name)

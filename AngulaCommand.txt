@@ -60,7 +60,6 @@ npm run deploy:gh
 
 git add .   //To add all file on git hub
 git commit -m 'all file added' //To commit changes
-git push origin main
 
 ==========Deployee angular Project on FireBase=========
 1-Must install package 
@@ -70,3 +69,18 @@ firebase login                   //if you have version issue  with node.js pleas
 3-firebase init        //here must change folder from Public to dist
 4-ng build
 5-firebase deploy       //to deployee when finish will give you URL  that you can see your app on it
+
+==============Deploy Angular Project on heroku===================
+1-npm  install --location  heroku
+2-heroku --version
+3-heroku login
+4-heroku create      //Create App on heroku (heroku will create with any name)
+5-git init
+6-git add .
+6-git commit -m "deploye test to heroku"
+7-there is some configuration   
+8-ng build
+9-git remote
+10-npm install express --save    //execuled this when i made it i git error
+11-git push heroku master
+===========================================

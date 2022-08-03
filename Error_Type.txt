@@ -1,0 +1,11 @@
+Error Type
+   400 ==>Incorrect databody  (data increatse,data decrease ..)
+   404 ==>UnAuthorized
+   403 ==>Cors origin   Api not allowed to be opened on this server (you can solve it by open google chrom and open URL not secure)
+   404 ==>Not Found or Incorect Path
+   409 ==>dublicated Paramter you enter(passwored two times)
+   500 ==>Internal Server Error  (Server not Working)
+
+
+Sucess 
+   200 ==>if Sucess
